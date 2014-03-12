@@ -3,9 +3,7 @@
 
 import sys
 PI=3.14159265358979323846264338327950288
-n = int(sys.argv[1])
-v = int(sys.argv[2])
-lista=[]
+
 def f(n):
   if (n!=0):
     suma=0
@@ -17,7 +15,9 @@ def f(n):
       suma+=fxi
     pi=float (suma)/n
     return pi
-    
+n = int(sys.argv[1])
+v = int(sys.argv[2])
+lista=[]
 for j in range (1, v+1):
    pi = f(j*n)
    lista = lista+[pi]
